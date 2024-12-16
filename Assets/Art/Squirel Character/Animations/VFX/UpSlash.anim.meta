@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c545cac9a5c8f104789af5e239eb2af0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/VFX/UpSlash.anim
+  uploadId: 485062

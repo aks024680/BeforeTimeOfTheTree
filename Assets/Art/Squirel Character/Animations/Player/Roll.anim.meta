@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 07f228c629e1d1c48ae849817c2a56ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/Player/Roll.anim
+  uploadId: 485062

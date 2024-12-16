@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 96dc528300246c8459a36d372896b9be
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/VFX/SmallImpact.anim
+  uploadId: 485062

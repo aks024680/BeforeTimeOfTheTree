@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b710c12cbd7882c48bd6a0673c495200
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/Player/Run.anim
+  uploadId: 485062

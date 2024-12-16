@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e184e97bfac08354a92dc1f118f6f5c6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/VFX/FX_slash_2.controller
+  uploadId: 485062

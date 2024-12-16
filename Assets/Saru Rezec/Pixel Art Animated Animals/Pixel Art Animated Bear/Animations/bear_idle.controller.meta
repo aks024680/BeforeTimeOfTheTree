@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 41c4cd7e851ed468b90ef72152841358
+timeCreated: 1558819383
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Bear/Animations/bear_idle.controller
+  uploadId: 554986

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 30fc3cc6cbe9243a9b7e2e28033e29ec
+timeCreated: 1558395290
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Fox/Animations/fox_idle.anim
+  uploadId: 554986

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 413a20fa6ecac41d4b35171987c5aaf2
+timeCreated: 1558881619
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Panther/Animations/panther_run.controller
+  uploadId: 554986

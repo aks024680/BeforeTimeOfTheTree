@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 48aae45ad72094fd19a4f59accb83726
+timeCreated: 1558881992
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Panther/Prefabs/panther_walk.prefab
+  uploadId: 554986

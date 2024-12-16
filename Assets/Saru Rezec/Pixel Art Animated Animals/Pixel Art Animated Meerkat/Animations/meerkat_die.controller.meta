@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 32761a8c4f8b6445b82ab9cd37dfc0f9
+timeCreated: 1558143971
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Meerkat/Animations/meerkat_die.controller
+  uploadId: 554986

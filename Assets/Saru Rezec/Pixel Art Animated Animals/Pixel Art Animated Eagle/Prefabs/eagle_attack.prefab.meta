@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f40c7fcccbd2847ca83b320b9b585459
+timeCreated: 1558126173
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Eagle/Prefabs/eagle_attack.prefab
+  uploadId: 554986

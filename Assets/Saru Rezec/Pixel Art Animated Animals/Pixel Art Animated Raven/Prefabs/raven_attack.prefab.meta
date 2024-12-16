@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5d92c8f73d27d41548219704397838ce
+timeCreated: 1558922764
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Raven/Prefabs/raven_attack.prefab
+  uploadId: 554986

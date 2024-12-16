@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1f2585c29acfdf943a32a7e617a89c30
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Goat/Animations/goat_die.controller
+  uploadId: 554986

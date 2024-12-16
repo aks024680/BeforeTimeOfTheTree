@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 54cb4512ac6f42441a6978fd3632bd12
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Goat/Animations/goat_attack.controller
+  uploadId: 554986

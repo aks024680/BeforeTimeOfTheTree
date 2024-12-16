@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d77b5ca42b6ef47c8a5c4bbc8709e029
+timeCreated: 1558922630
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Raven/Animations/raven_die.controller
+  uploadId: 554986

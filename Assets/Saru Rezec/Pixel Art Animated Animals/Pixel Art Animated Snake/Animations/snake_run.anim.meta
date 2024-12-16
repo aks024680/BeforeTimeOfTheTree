@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 858e0b14bf394475fbde0667e5704e88
+timeCreated: 1559143738
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Snake/Animations/snake_run.anim
+  uploadId: 554986

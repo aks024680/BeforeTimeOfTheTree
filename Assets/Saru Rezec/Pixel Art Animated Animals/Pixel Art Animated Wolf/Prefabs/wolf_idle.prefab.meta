@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 80768ebe7d91a4450b3b3e53e3e3b4ce
+timeCreated: 1558065549
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Wolf/Prefabs/wolf_idle.prefab
+  uploadId: 554986

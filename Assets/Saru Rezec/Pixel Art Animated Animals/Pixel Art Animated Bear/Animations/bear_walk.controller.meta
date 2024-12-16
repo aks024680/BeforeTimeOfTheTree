@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b55bc321cbb954ab9987c3bd6e9b5fea
+timeCreated: 1558829020
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Bear/Animations/bear_walk.controller
+  uploadId: 554986

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 57396573576fd4984911ef2a1644be71
+timeCreated: 1558066449
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Wolf/Animations/wolf_run.anim
+  uploadId: 554986

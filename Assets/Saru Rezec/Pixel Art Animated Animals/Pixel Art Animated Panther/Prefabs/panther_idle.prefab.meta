@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6d6781645bbad43b1a6931153b50ef57
+timeCreated: 1558881990
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Panther/Prefabs/panther_idle.prefab
+  uploadId: 554986

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d6b0efcf138c04c2aaf1cff5cfc66128
+timeCreated: 1558143684
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148283
+  packageName: 'Pixel Art: Animated Animals'
+  packageVersion: 1.1
+  assetPath: Assets/Saru Rezec/Pixel Art Animated Animals/Pixel Art Animated Meerkat/Animations/meerkat_walk.anim
+  uploadId: 554986

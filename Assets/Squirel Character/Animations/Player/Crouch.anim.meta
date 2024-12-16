@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66c7c1410c1715540ae8a7e84ceaf824
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/Player/Crouch.anim
+  uploadId: 485062

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 132c51d44dca2d74f8cd63e81b05eda6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Prefabs/SlashVFX.prefab
+  uploadId: 485062

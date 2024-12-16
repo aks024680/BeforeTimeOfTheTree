@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e714e9f7f211876458b4715ad099c61a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/Player/Walk.anim
+  uploadId: 485062

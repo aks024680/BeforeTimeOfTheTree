@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e19e95b9afac40144ba344dacaac8a4d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/Player/Swim.anim
+  uploadId: 485062

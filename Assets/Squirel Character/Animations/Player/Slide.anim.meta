@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f846f395d86681c46a7f970d08845899
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215294
+  packageName: 2D Squirrel Character
+  packageVersion: 1.0
+  assetPath: Assets/Squirel Character/Animations/Player/Slide.anim
+  uploadId: 485062

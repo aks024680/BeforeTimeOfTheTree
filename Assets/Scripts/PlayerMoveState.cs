@@ -24,6 +24,8 @@ namespace BeforeTimeOfTheTree
             
             player.currentSpeed = Mathf.MoveTowards(player.currentSpeed,player.runSpeed,player.addSpeed * Time.deltaTime);
             player.anim.SetFloat("xVelocity", player.currentSpeed);
+            if (xInput == 0 && player.currentSpeed == 8) 
+            player.currentSpeed = 0;
             if (xInput == 0)
                 player.stateMachine.ChangeState(player.idleState);
         }

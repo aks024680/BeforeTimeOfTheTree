@@ -5,7 +5,10 @@ namespace BeforeTimeOfTheTree
     public class Player : MonoBehaviour
     {
         [Header("Move Info")]
-        public float moveSpeed = 8f;
+        public float walkSpeed = 2f;
+        public float runSpeed = 6f;
+        public float addSpeed = 2f;
+        public float currentSpeed;
         #region Component
         public Animator anim { get; private set; }
         public Rigidbody2D rb { get; private set; }
@@ -37,6 +40,7 @@ namespace BeforeTimeOfTheTree
         public void SetVelocity(float _xVelocity,float _yVelocity)
         {
             rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
+            
         }
     }
 }

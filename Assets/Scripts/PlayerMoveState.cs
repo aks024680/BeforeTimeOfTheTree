@@ -20,8 +20,10 @@ namespace BeforeTimeOfTheTree
         public override void Update()
         {
             base.Update();
-            player.SetVelocity(xInput * player.moveSpeed, rb.linearVelocity.y);
-
+            player.SetVelocity(xInput * player.walkSpeed , rb.linearVelocity.y);
+            
+            player.currentSpeed = Mathf.MoveTowards(player.currentSpeed,player.runSpeed,player.addSpeed * Time.deltaTime);
+            player.anim.SetFloat("xVelocity", player.currentSpeed);
             if (xInput == 0)
                 player.stateMachine.ChangeState(player.idleState);
         }

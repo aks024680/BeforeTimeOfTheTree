@@ -5,9 +5,9 @@ namespace BeforeTimeOfTheTree
     public class Player : MonoBehaviour
     {
         [Header("Move Info")]
-        public float walkSpeed = 7f;
-        public float runSpeed = 8f;
-        public float addSpeed = 6f;
+        public float walkSpeed = 5f;
+        public float runSpeed = 6f;
+        public float addSpeed = 4f;
         public float currentSpeed;
         #region Component
         public Animator anim { get; private set; }

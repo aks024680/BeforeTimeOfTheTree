@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 40613002}
   - component: {fileID: 40613001}
   - component: {fileID: 40613000}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,10 +705,16 @@ MonoBehaviour:
   addSpeed: 9
   currentSpeed: 0
   jumpForce: 12
+  dashCoolDown: 1
+  dashSpeed: 25
+  dashDuration: 0.25
   groundCheck: {fileID: 549764371}
   groundCheckDistance: 0.15
   wallCheck: {fileID: 1476264078}
   wallCheckDistance: 0.32
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!4 &771165576
 Transform:
   m_ObjectHideFlags: 0
@@ -802,7 +808,7 @@ GameObject:
   - component: {fileID: 1209147852}
   - component: {fileID: 1209147851}
   - component: {fileID: 1209147850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +973,7 @@ GameObject:
   - component: {fileID: 1616963001}
   - component: {fileID: 1616963000}
   - component: {fileID: 1616962999}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -20,7 +20,11 @@ public class PlayerAirState : PlayerState
     public override void Update()
     {
         base.Update();
+        if(player.IsWallDetected)
+            player.stateMachine.ChangeState(player.wallSlideState);
         if(rb.linearVelocity.y == 0)
             player.stateMachine.ChangeState(player.idleState);
+        if(xInput != 0)
+            player.SetVelocity(player.walkSpeed * .8f * xInput,rb.linearVelocity.y);
     }
 }

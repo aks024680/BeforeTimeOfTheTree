@@ -41,6 +41,8 @@ namespace BeforeTimeOfTheTree
         public PlayerJumpState jumpState { get; private set; }
         public PlayerAirState airState { get; private set; }
         public PlayerDashState dashState { get; private set; }
+        public PlayerWallSlideState wallSlideState { get; private set; }
+        public PlayerWallJumpState wallJumpState { get; private set; }
         #endregion
 
         private void Awake()
@@ -51,6 +53,8 @@ namespace BeforeTimeOfTheTree
             jumpState = new PlayerJumpState(this, stateMachine, "Jump");
             airState = new PlayerAirState(this, stateMachine, "Jump");
             dashState = new PlayerDashState(this, stateMachine, "Dash");
+            wallSlideState = new PlayerWallSlideState(this, stateMachine, "WallSlide");
+            wallJumpState = new PlayerWallJumpState(this, stateMachine, "Jump");
         }
         private void Start()
         {
@@ -66,6 +70,8 @@ namespace BeforeTimeOfTheTree
 
         private void CheckForDashIInput()
         {
+            if (IsWallDetected)
+                return;
             dashUsageTimer -= Time.deltaTime;
             if (Input.GetKeyDown(KeyCode.LeftShift) && dashUsageTimer < 0)
             {
@@ -84,6 +90,15 @@ namespace BeforeTimeOfTheTree
             rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
             FlipController(_xVelocity);
         }
+        
+        public bool IsGroundDetected => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
+        public bool IsWallDetected => Physics2D.Raycast(wallCheck.position,Vector2.right,wallCheckDistance,whatIsGround);
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
+            Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
+        }
         public void Flip()
         {
             facingDir = facingDir * -1;
@@ -96,13 +111,6 @@ namespace BeforeTimeOfTheTree
                 Flip();
             else if (_x < 0 && facingRight)
                 Flip();
-        }
-        public bool IsGroundDetected => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
-
-        private void OnDrawGizmos()
-        {
-            Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
-            Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
-        }
+        } 
     }
 }

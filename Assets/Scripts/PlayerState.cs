@@ -4,6 +4,7 @@ namespace BeforeTimeOfTheTree
     public class PlayerState
     {
         protected float xInput;
+        protected float yInput;
         protected PlayerStateMachine stateMachine;
         protected Player player;
         private string animBoolName;
@@ -26,6 +27,7 @@ namespace BeforeTimeOfTheTree
         {
             stateTimer -= Time.deltaTime;
             xInput = Input.GetAxisRaw("Horizontal");
+            yInput = Input.GetAxisRaw("Vertical");
             player.anim.SetFloat("yVelocity", rb.linearVelocity.y);
             //Debug.Log("I am in " + animBoolName);
 

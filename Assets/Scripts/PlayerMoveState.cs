@@ -26,7 +26,7 @@ namespace BeforeTimeOfTheTree
             player.anim.SetFloat("xVelocity", player.currentSpeed);
             if (xInput == 0 && player.currentSpeed == 8) 
             player.currentSpeed = 0;
-            if (xInput == 0)
+            if (xInput == 0 || player.IsWallDetected)
                 player.stateMachine.ChangeState(player.idleState);
         }
     }

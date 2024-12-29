@@ -70,6 +70,8 @@ namespace BeforeTimeOfTheTree
             CheckForDashIInput();
         }
 
+        public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
+
         private void CheckForDashIInput()
         {
             if (IsWallDetected)

@@ -10,6 +10,8 @@ namespace BeforeTimeOfTheTree
         private string animBoolName;
         protected float stateTimer;
 
+        protected bool triggerCalled;
+
         public Rigidbody2D rb;
         public PlayerState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName)
         {
@@ -21,6 +23,7 @@ namespace BeforeTimeOfTheTree
         {
             player.anim.SetBool(animBoolName, true);
             rb = player.rb;
+            triggerCalled = false;
             //Debug.Log("I enter " + animBoolName);
         }
         public virtual void Update()
@@ -37,6 +40,10 @@ namespace BeforeTimeOfTheTree
             player.anim.SetBool(animBoolName, false);
             //Debug.Log("I exit " + animBoolName);
 
+        }
+        public virtual void AnimationFinishTrigger()
+        {
+            triggerCalled = true;
         }
     }
 }

@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 namespace BeforeTimeOfTheTree
 {
     public class Player : MonoBehaviour
     {
+        [Header("Attack details")]
+        public Vector2[] attackMovement;
+
         [Header("Move Info")]
         public float walkSpeed = 5f;
         public float runSpeed = 8f;
@@ -29,6 +33,8 @@ namespace BeforeTimeOfTheTree
         public int facingDir { get; private set; } = 1;
         private bool facingRight = true;
 
+        public bool isBusy { get; private set; }
+
         #region Component
         public Animator anim { get; private set; }
         public Rigidbody2D rb { get; private set; }
@@ -43,7 +49,7 @@ namespace BeforeTimeOfTheTree
         public PlayerDashState dashState { get; private set; }
         public PlayerWallSlideState wallSlideState { get; private set; }
         public PlayerWallJumpState wallJumpState { get; private set; }
-        public PlayerPrimaryAttack primaryAttack { get; private set; }
+        public PlayerPrimaryAttackState primaryAttack { get; private set; }
         #endregion
 
         private void Awake()
@@ -56,7 +62,7 @@ namespace BeforeTimeOfTheTree
             dashState = new PlayerDashState(this, stateMachine, "Dash");
             wallSlideState = new PlayerWallSlideState(this, stateMachine, "WallSlide");
             wallJumpState = new PlayerWallJumpState(this, stateMachine, "Jump");
-            primaryAttack = new PlayerPrimaryAttack(this, stateMachine, "Attack");
+            primaryAttack = new PlayerPrimaryAttackState(this, stateMachine, "Attack");
         }
         private void Start()
         {
@@ -68,6 +74,16 @@ namespace BeforeTimeOfTheTree
         {
             stateMachine.currentState.Update();
             CheckForDashIInput();
+            
+        }
+        
+        public IEnumerator BusyFor(float _seconds)
+        {
+            isBusy = true;
+            Debug.Log("is busy");
+            yield return new WaitForSeconds(_seconds);
+            Debug.Log("not busy");
+            isBusy = false;
         }
 
         public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
@@ -88,13 +104,16 @@ namespace BeforeTimeOfTheTree
                 stateMachine.ChangeState(dashState);
             }
         }
+        #region Velocity
+        public void ZeroVelocity() => rb.linearVelocity = new Vector2(0, 0);
 
         public void SetVelocity(float _xVelocity, float _yVelocity)
         {
             rb.linearVelocity = new Vector2(_xVelocity, _yVelocity);
             FlipController(_xVelocity);
         }
-        
+        #endregion
+        #region Collision
         public bool IsGroundDetected => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
         public bool IsWallDetected => Physics2D.Raycast(wallCheck.position,Vector2.right,wallCheckDistance,whatIsGround);
 
@@ -103,6 +122,8 @@ namespace BeforeTimeOfTheTree
             Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
             Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
         }
+        #endregion
+        #region Flip
         public void Flip()
         {
             facingDir = facingDir * -1;
@@ -115,6 +136,7 @@ namespace BeforeTimeOfTheTree
                 Flip();
             else if (_x < 0 && facingRight)
                 Flip();
-        } 
+        }
+        #endregion
     }
 }

@@ -5,6 +5,7 @@ namespace BeforeTimeOfTheTree
 {
     public class Player : MonoBehaviour
     {
+        
         [Header("Attack details")]
         public Vector2[] attackMovement;
 

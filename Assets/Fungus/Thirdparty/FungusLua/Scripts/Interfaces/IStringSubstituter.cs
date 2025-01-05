@@ -32,6 +32,8 @@ namespace Fungus
     /// </summary>
     public interface ISubstitutionHandler
     {
+        bool GetBooleanVariable(string fungusString);
+
         /// <summary>
         /// Modifies a StringBuilder so that tokens are replaced by subsituted values.
         /// It's up to clients how to implement substitution but the convention looks like:

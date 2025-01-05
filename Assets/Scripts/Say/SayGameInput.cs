@@ -9,7 +9,8 @@ namespace BeforeTimeOfTheTree
     {
         [SerializeField,Header("遊戲管理器")] protected Flowchart fungusGM;
         [SerializeField]private GameObject SayCanvas;
-        
+        [SerializeField] Player player;
+        [SerializeField]StartSayController startSayController;
         private void Start()
         {
             
@@ -26,7 +27,12 @@ namespace BeforeTimeOfTheTree
             if (Input.GetKeyDown(KeyCode.E))
             {
                 BasicInput();
+                player.GetComponent<Player>().enabled = false;
             }
+            if (fungusGM.GetBooleanVariable(startSayController.fungusString))
+                player.GetComponent<Player>().enabled = true;
+
+
         }
         
         private void OnTriggerEnter2D(Collider2D collision)

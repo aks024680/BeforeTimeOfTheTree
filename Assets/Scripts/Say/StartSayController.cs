@@ -6,7 +6,7 @@ namespace BeforeTimeOfTheTree
     public class StartSayController : MonoBehaviour
     {
         [SerializeField, Header("遊戲管理器")] protected Flowchart fungusGM;
-        [SerializeField] private string fungusString;
+        public string fungusString;
         [SerializeField] private GameObject player;
         private void Awake()
         {
@@ -17,13 +17,13 @@ namespace BeforeTimeOfTheTree
             
 
             fungusGM.SendFungusMessage("Start");
-            Debug.Log(fungusString);
+            
         }
         private void Update()
         {
             if (fungusGM.GetBooleanVariable(fungusString))
                 this.GetComponent<Player>().enabled = true;
-            Debug.Log(fungusString);
+            
         }
     }
 }

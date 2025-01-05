@@ -1,21 +1,29 @@
-﻿using UnityEngine;
+﻿using Fungus;
+using UnityEngine;
 namespace BeforeTimeOfTheTree
 {
 
-    public class StartSayController : SayGameInput
+    public class StartSayController : MonoBehaviour
     {
+        [SerializeField, Header("遊戲管理器")] protected Flowchart fungusGM;
         [SerializeField] private string fungusString;
         [SerializeField] private GameObject player;
+        private void Awake()
+        {
+            this.GetComponent<Player>().enabled = false;
+        }
         private void Start()
         {
+            
+
             fungusGM.SendFungusMessage("Start");
-            if (fungusGM.GetBooleanVariable(fungusString))
-                player.GetComponent<Player>().enabled = false;
+            Debug.Log(fungusString);
         }
         private void Update()
         {
             if (fungusGM.GetBooleanVariable(fungusString))
-                player.GetComponent<Player>().enabled = true;
+                this.GetComponent<Player>().enabled = true;
+            Debug.Log(fungusString);
         }
     }
 }

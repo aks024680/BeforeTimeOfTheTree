@@ -60,5 +60,8 @@ TagManager:
   - name: Front
     uniqueID: 3195809155
     locked: 0
+  - name: Animal
+    uniqueID: 3543758231
+    locked: 0
   m_RenderingLayers:
   - Default

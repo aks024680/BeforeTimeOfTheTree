@@ -14,32 +14,20 @@ namespace BeforeTimeOfTheTree
         
         private void Start()
         {
-            
-            
-
             SayCanvas.SetActive(false);
         }
         private void Update()
         {
-
-            
-
-                
-
             if (Input.GetKeyDown(KeyCode.E))
             {
                 BasicInput();
                 
             }
-            
-
-
         }
         
         private void OnTriggerEnter2D(Collider2D collision)
         {
             SayCanvas.SetActive(true);
-            
         }
         private void OnTriggerExit2D(Collider2D collision)
         {
@@ -48,7 +36,7 @@ namespace BeforeTimeOfTheTree
         }
         protected virtual void BasicInput()
         {
-            fungusGM.SendFungusMessage("遊戲基礎操作");
+            fungusGM.SendFungusMessage("BasicPlay");
         }
     }
 }

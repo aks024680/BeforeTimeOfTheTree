@@ -8,13 +8,10 @@ namespace BeforeTimeOfTheTree
         [SerializeField, Header("遊戲管理器")] protected Flowchart fungusGM;
         public string fungusString;
         [SerializeField] private GameObject player;
-        private void Awake()
-        {
-            this.GetComponent<Player>().enabled = false;
-        }
+       
         private void Start()
         {
-            
+            this.GetComponent<Player>().enabled = false;
 
             fungusGM.SendFungusMessage("Start");
             

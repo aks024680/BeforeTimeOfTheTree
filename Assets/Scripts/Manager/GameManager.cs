@@ -9,6 +9,7 @@ namespace BeforeTimeOfTheTree
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject SayCanvas;
         [SerializeField] private GameObject dialog;
+        //[SerializeField] private GameObject conTrigger;
         [Space]
         private RectTransform rectTransform;
         private Canvas d2Panel;
@@ -78,6 +79,7 @@ namespace BeforeTimeOfTheTree
 
         void OnTriggerExit2D(Collider2D other)
         {
+            
             
             SayCanvas.SetActive(false);
             if (other.CompareTag("Player"))
